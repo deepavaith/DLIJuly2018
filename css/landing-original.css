@@ -11,10 +11,10 @@ html {
 }
 
 body{
-	/*background: url(../img/body-bg.png);*/
+	background: url(../img/body-bg.png);
 	background-attachment: fixed;
 	background-blend-mode: luminosity;
-	background-color: #fff;
+	background-color: #ffdd00;
 }
 
 body,
@@ -27,15 +27,6 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
-.filter p
-		{
-			padding: 10px 15px;
-			text-align: center;
-			color: #000;
-			font-size: 15px;
-			margin: 0px;
-		}
 
 .topnav {
     font-size: 14px; 
@@ -246,8 +237,8 @@ textarea:focus, input:focus{
 	float: left;
 }
 .filterdiv{
-	border: 2px solid #DBDBDB;;
-	background: #F3F3F3;/*url(../img/box-bg.png);*/
+	border: 1px solid #AAAAAA;
+	background: #F3F3F3/*url(../img/box-bg.png);*/
 	height: 567px;
 }
 
@@ -268,11 +259,11 @@ textarea:focus, input:focus{
 .searchterm{
 	padding: 10px 0px;
 	text-align: left;
-	color: #000;
+	color: #63223c;
 	font-size: 15px;
 }
 #searchresult{
-	border: 2px solid #DBDBDB;
+	border: 1px solid #AAAAAA;
 	margin-right: 10px;
 	text-align: left;
 	color:#000000;
@@ -575,13 +566,13 @@ input::-moz-focus-inner,input::-moz-focus-outer {
 /*reset button*/
 input[type="button"] {
     outline: none;
-    color: #ffffff;
+    color: #000000;
     padding: .5em 3em;
     font-size: .9em;
     margin: 1em 0 0 0;
     -webkit-appearance: none;
-    background: #db4437;
-    border: 1px solid #DB4437;
+    background: #ffdd00;
+    border: 1px solid #ffb262;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -589,9 +580,9 @@ input[type="button"] {
     transition: 0.5s all;
 }
 input[type="button"]:hover {
-    background-color: #fc7e7e;
-    color: #ffffff;
-    border: 1px solid #DB4437;
+    background-color: #888;
+    color: #000000;
+    border: 1px solid #000000;
 }
 /*preloader*/
 .modal {

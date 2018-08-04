@@ -187,23 +187,20 @@
 		<div class="intro-header">
 			<div class="container">
 				<div class="row">
-			
-							<div class="searchterm col-lg-8-5"></div>
-							<div class="filter col-lg-3"><p> Filters </p></div>
-				
+					<div class="searchterm"></div>
 					<div class="content-div">
-						
 						<div class="col-lg-12 categorydiv">
 							
 							<!--<button name="reset" value="Reset"></button>-->
 							<div class="col-lg-8-5" id="searchresult"></div>   
 							<div class="modal"></div>
+							
 							<div class="col-lg-3 filterdiv">
 								<p style="color: #000000;font-size: 16px;padding-top: 15px;float: left;margin-right: 10px;">Select search conditions</p>
 								<input value="RESET" style="float: left;" type="button" onclick="reset()">
 								<p style="color: #444;margin-top: 26px;font-size: 17px;padding-left: 2px;margin-bottom: 5px">
-									<label for="date" style="padding-right:2em;" >Publication Date&nbsp;&nbsp;&nbsp;</label>
-									<input id="date" readonly="" style="border:0; color:#db4437; font-weight:bold; background: transparent;" type="text">
+									<label for="date">Publication Date&nbsp;&nbsp;&nbsp;</label>
+									<input id="date" readonly="" style="border:0; color:#f6931f; font-weight:bold;" type="text">
 								</p>
 								<div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
 									<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" id="From" style="left: 15%;"></span>
@@ -239,7 +236,7 @@
 							</div>
 							
 						</div>
-
+						
 					</div>
 				</div>
 			</div>
