@@ -129,21 +129,22 @@ do {
 				//echo "image=".$ImagePath;
 				//echo "<br><br>";
 				if($row['dc_contributor_author']){
-					$Author="by ".$row['dc_contributor_author'];
+					$Author="by ".ucwords($row['dc_contributor_author']);
 				}
 				
 				echo '<div class="wholediv"><div class="bookdiv"><img src="'.$ImagePath.'" class="'.$ImageClass.'" onclick='.'"onclick=OpenFile(\''. $row['google_drive_id'].'\');"'.' /><div class="text"><img src="img/pdf.png">&nbsp;&nbsp;'.$row['id'].'-'.$row['dc_title'].'</div></div><div class="textdiv">'.$row['dc_title'].'<br>'.$Author.'</div></div>';
 			}
 		}
 		$StringValue='"'.$Value.'"';
-		if($Noofrows==0){
+		echo "<script>$('#searchresult').css('height','auto');$('.searchterm').html('Searching inside 551,427 books (31TB of data)');</script>";
+		/*if($Noofrows==0){
 			echo "<script>$('#searchresult').css('height','567px');$('.searchterm').html('Your search ".$StringValue." matches 0 documents.');</script>";
 			echo "<div class='emptydiv'>No Data Found</div>";		
 		}else if($Noofrows<6){
 			echo "<script>$('#searchresult').css('height','567px');$('.searchterm').html('Your search ".$StringValue." matches ".$Noofrows." documents.');</script>";
 		}else{
 			echo "<script>$('#searchresult').css('height','auto');$('.searchterm').html('Your search ".$StringValue." matches ".$Noofrows." documents.');</script>";
-		}
+		}*/
 		
 		$pageToken = $repsonse->pageToken;
 	}else{

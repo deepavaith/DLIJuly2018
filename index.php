@@ -115,6 +115,7 @@
 					$('#institution').closest('.input').removeClass('input--filled');
 				}
 				//alert("value1--"+Value1);
+				$('#searchresult').css('height','auto');$('.searchterm').html('Searching inside 551,427 books (31TB of data)');
 				$.ajax({
 					url: 'functions.php?WhichField='+WhichField+'&Value='+encodeURIComponent(Value)+'&Value1='+encodeURIComponent(Value1),
 					success: function (data) {
